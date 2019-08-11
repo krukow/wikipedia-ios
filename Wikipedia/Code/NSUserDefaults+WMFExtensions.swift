@@ -49,15 +49,7 @@ let WMFSearchLanguageKey = "WMFSearchLanguageKey"
     }
 
     @objc static let wmf: UserDefaults = {
-#if WMF_NO_APP_GROUP
         return UserDefaults.standard
-#else
-        guard let defaults = UserDefaults(suiteName: WMFApplicationGroupIdentifier) else {
-            assertionFailure("Defaults not found!")
-            return UserDefaults.standard
-        }
-        return defaults
-#endif
     }()
     
     @objc class func wmf_migrateToWMFGroupUserDefaultsIfNecessary() {

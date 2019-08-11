@@ -96,7 +96,7 @@ class WikipediaUITests: XCTestCase {
         // Useful if you temporarily comment out the welcome screens above.
         // app.wmf_tapFirstButton(withTranslationIn: ["button-skip"])
 
-
+/*
         // Scroll down a ways then back up to increase odds that feed elements are in place and won't be freshing underneath us while the code below scrolls and attempts to tap on elements.
         app.wmf_scrollDown(times: 20)
         app.wmf_scrollToTop()
@@ -423,5 +423,6 @@ class WikipediaUITests: XCTestCase {
         
         app.wmf_tapFirstButton(withTranslationIn: ["places-accessibility-show-as-list"])
         wmf_snapshot("Places7")
+ */
     }
 }
